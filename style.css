@@ -1,0 +1,72 @@
+body{
+    background-color: black;
+}
+.container{
+    width: 400px;
+    padding: 30px ;
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 34%;
+    border-radius: 25px;
+    background: white;
+
+}
+.container p{
+    margin-bottom: 20px;
+    border-radius: 3px;
+    font-weight: 900;
+    font-size: 30px;
+}
+.container input{
+    border: 3px solid pink;
+    width: 94%;
+    height: 50px;
+    padding: 5px;
+    padding-left: 15px;
+    font-weight: 700;
+    border-radius: 5px;
+    font-size: large;
+}
+.container button{
+    background-color: pink;
+    color: black;
+    height: 50px;
+    width: 100%;
+    cursor: pointer;
+    font-weight: 900;
+    border-radius: 5px;
+
+}
+#imgbox{
+    padding-top: 30px;
+    padding-left: 32%;
+    height: 0;
+    overflow: hidden;
+    transition: height 1s;
+    
+}
+#imgbox.showimage{
+    height: 190px;
+
+}
+.error{
+    animation: shake 0.1s linear 10;
+}
+@keyframes shake{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-2px);
+    }
+    50%{
+        transform: translateX(0);
+    }
+    75%{
+        transform: translateX(2px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+
+}
